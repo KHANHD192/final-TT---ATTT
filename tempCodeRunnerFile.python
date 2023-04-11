@@ -1,0 +1,17 @@
+# Nhập vào nhiệt độ trung bình của 7 ngày trong tuần
+temps = []
+for i in range(7):
+    temp = float(input("Nhập vào nhiệt độ trung bình của ngày thứ {}: ".format(i+1)))
+    temps.append(temp)
+
+# Hiển thị các ngày có nhiệt độ thấp hơn 30 độ
+print("Các ngày có nhiệt độ thấp hơn 30 độ là:")
+for i in range(7):
+    if temps[i] < 30:
+        print("Ngày thứ {} có nhiệt độ {}".format(i+1, temps[i]))
+
+# Tính nhiệt độ trung bình của 7 ngày đó
+total = sum(temps)
+avg_temp = total/7
+print("Nguyen Ha ANH _11A10")
+print("Nhiệt độ trung bình của 7 ngày là: {:.2f}".format(avg_temp))
